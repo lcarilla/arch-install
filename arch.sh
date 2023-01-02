@@ -40,15 +40,7 @@ cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo
 grub-mkconfig -o /boot/grub/grub.cfg
 #exit and press enter
 umount -a 
-
-
-
 # AFTER REBOOT
-cd /root
-dd if=/dev/zero of=/swapfile bs=1M count=4096 status=progress
-chmod 600 /swapfile
-mkswap /swapfile
-echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
 #timedatectl list
 timedatectl set-timezone Your/Timezone
 systemctl enable systemd-timesyncd

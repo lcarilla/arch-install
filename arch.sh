@@ -58,3 +58,4 @@ pacman -S discord chromium code
 #install yay
 pacman -Rns epiphany gnome-software gnome-photos gnome-music gnome-contacts gnome-text-editor cheese gnome-user-docs
 pacman -Rns yelp gnome-video-effects gnome-calendar
+yay -S noto-fonts

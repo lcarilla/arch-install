@@ -9,7 +9,7 @@ SYNC_LOCK="$SYNC_HOME/mirrorsync.lck"
 SYNC_REPO=(core extra community iso)
 #the server you want to sync from
 SYNC_SERVER=rsync://ftp.halifax.rwth-aachen.de/archlinux/
-#maximum bandwidth that should be used when syncing
+#maximum bandwidth that should be used when syncing (kB)
 MAX_BANDWIDTH = 10000
 for repo in ${SYNC_REPO[@]}; do
 repo=$(echo $repo | tr [:upper:] [:lower:])
